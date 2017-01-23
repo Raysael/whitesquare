@@ -1,0 +1,9 @@
+header.header
+	.row.header__row
+		.logo.header__logo
+			img.logo__img(src= 'images/logo_top.png')
+		ul.nav.header__nav
+			each val in menu
+				li.nav__item
+					a.nav__link.nav__link_font(href= '#')= val
+	

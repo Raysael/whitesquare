@@ -1,0 +1,12 @@
+.gallery.main__gallery
+	for val in gallery
+		if val.subtitle
+			.gallery__name
+				h3.gallery__title.gallery__title_big= val.title
+				p.gallery__subtitle= val.subtitle
+		else
+			.gallery__section
+				.gallery__frame
+					img.gallery__img(src= val.img)
+				h5.gallery__title= val.title
+				p.gallery__price= val.price

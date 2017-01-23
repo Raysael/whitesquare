@@ -1,0 +1,27 @@
+footer.footer
+	.column.footer__column
+		h4.footer__title about us
+		ul.nav.footer__nav
+			each val in aboutUs
+				li.nav__item
+					a.nav__link(href= '#')= val
+	.column.footer__column
+		h4.footer__title Services	
+		ul.nav.footer__nav
+			each val in services
+				li.nav__item
+					a.nav__link(href= '#')= val
+	.column.footer__column
+		h4.footer__title Blog	
+		ul.nav.footer__nav
+			each val in blog
+				li.nav__item
+					a.nav__link(href= '#')= val
+	.column.footer__column
+		h4.footer__title Contact	
+		ul.nav.footer__nav
+			each val in contact
+				li.nav__item
+					a.nav__link(href= '#')= val
+	.logo.footer__logo
+			img.logo__img(src= 'images/logo_footer.png')

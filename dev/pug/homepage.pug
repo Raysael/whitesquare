@@ -1,0 +1,16 @@
+extends includes/index.pug
+block main	
+	main.main
+		.aside.main__aside.main__aside_big
+			h1.aside__title.aside__title_center wind power
+			p.aside__subtitle Lorem, ipsum & dolor
+			button.aside__button Learn more
+		.container.main__container.main__container_1
+			- var content = content__blocks
+			include includes/_content__blocks.pug
+		.container.main__container.main__container_2
+			h1.container__title recent posts
+			- var content = content__boxes
+			include includes/_content__blocks.pug
+			
+		

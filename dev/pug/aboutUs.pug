@@ -1,0 +1,14 @@
+extends includes/index.pug
+block main	
+	main.main
+		.aside.main__aside
+			h1.aside__title about us
+		.container.main__container.main__container_1
+			h1.container__title.container__title_center awesome team
+			img.container__img(src= 'images/awesome.png')
+			p.container__text In nec turpis sem. Ut pharetra erat justo, vitae dapibus ante laoreet nec. Vestibulum dapibus ante eu viverra tristique. Nunc massa leo, vulputate a ipsum sit amet, eleifend feugiat odio. Integer at massa vel ligula placerat sollicitudin ut nec sapien. Etiam aliquet nulla a nulla lobortis tincidunt. Suspendisse elementum suscipit vulputate. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam luctus mollis augue, at tempor nibh imperdiet et. In pellentesque ante sit amet sapien elementum.
+			p.container__text Vivamus ac tempus magna, sed tristique justo. Aliquam ullamcorper lorem sit amet orci condimentum porta. Sed a augue vel libero tincidunt ullamcorper. Suspendisse potenti. In pharetra mattis pharetra. Aliquam mattis eros in convallis tempus. Etiam a elit scelerisque, molestie mi et, imperdiet elit. Pellentesque vel lorem id ipsum gravida imperdiet eu id eros. 
+		.container.main__container.main__container_2
+			- var content = content__aboutUs
+			include includes/_content__blocks.pug
+			

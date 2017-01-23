@@ -1,0 +1,9 @@
+.slider.main__slider
+	.slider__arrow.slider__arrow_left
+		img(src= 'images/arrow_left.png')
+	.slides-box.slider__slides-box
+		for val in slides
+			.slider__slide
+				img.slider__img(src= val.image)
+	.slider__arrow.slider__arrow_right
+		img(src= 'images/arrow_right.png')

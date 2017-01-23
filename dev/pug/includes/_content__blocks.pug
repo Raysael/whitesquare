@@ -1,0 +1,15 @@
+for val in content
+	if val.image
+		.box.container__box.container__box_w
+			img.box__img(src= val.image)
+			h3.box__title.box__title_small= val.title
+			p.box__text.box__text_left= val.text
+	else if val.button
+		.box.container__box
+			h3.box__title= val.title
+			p.box__text= val.text
+			button.box__button= val.button
+	else 
+		.box.container__box
+			h3.box__title.box__title_black= val.title
+			p.box__text= val.text
